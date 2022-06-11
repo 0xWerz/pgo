@@ -14,18 +14,19 @@ pgo is a fast tool designed to scan tcp ports more simply.
 $ git clone https://github.com/0xwerz/pgo.git
 $ cd pgo
 $ sudo go build main.go -o pgo && cp pgo /usr/bin 
-$ pgo -h
+$ pgo --help
 ```
 
 
 ## 📈 Usage
 ```ruby
-  -h string
-    	Host ip/hostname
-  -r1 int
-    	port range start (default 22)
-  -r2 int
-    	port range end (default 161)
+$ pgo --help
+ -h string
+   	Host ip/hostname
+ -r1 int
+   	port range start (default 22)
+ -r2 int
+   	port range end (default 161)
 ```
 
 ### Example
