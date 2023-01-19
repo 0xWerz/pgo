@@ -1,4 +1,4 @@
-<h2 align="center">pgo - TCP ports scanner</h2>
+<h2 align="center">pgo - TCP - UDP ports scanner</h2>
 <p align=center>
 <a href="https://go.dev/"><img src="https://img.shields.io/badge/Made%20with-Go-1f425f.svg">
 <a href="https://GitHub.com/0xwerz/pgo/releases/"><img src="https://img.shields.io/github/v/release/0xWerz/pgo">
