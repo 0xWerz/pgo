@@ -1,11 +1,11 @@
 <h2 align="center">pgo - TCP ports scanner</h2>
-
-[![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](https://go.dev/)
-[![GitHub release](https://img.shields.io/github/v/release/0xWerz/pgo)](https://GitHub.com/0xwerz/pgo/releases/)
-[![GitHub forks](https://badgen.net/github/forks/0xwerz/pgo/)](https://GitHub.com/0xwerz/pgo/network/)
-[![GitHub forks](https://badgen.net/github/stars/0xwerz/pgo)](https://GitHub.com/0xwerz/pgo/network/)
-
-pgo is a fast tool designed to scan tcp ports more simply.
+<p align=center>
+<a href="https://go.dev/"><img src="https://img.shields.io/badge/Made%20with-Go-1f425f.svg">
+<a href="https://GitHub.com/0xwerz/pgo/releases/"><img src="https://img.shields.io/github/v/release/0xWerz/pgo">
+<a href="https://github.com/0xwerz/pgo/network/"><img src="https://badgen.net/github/stars/0xwerz/pgo">
+<a href="https://github.com/0xwerz/pgo/network/)"><img src="https://badgen.net/github/forks/0xwerz/pgo/">
+</a>
+</p>
 
 
 ## ⬇️ Installation
@@ -20,16 +20,25 @@ $ pgo --help
 
 ## 📈 Usage
 ```ruby
-$ pgo --help
- -h string
-   	Host ip/hostname
- -r1 int
-   	port range start (default 22)
- -r2 int
-   	port range end (default 161)
+$ pgo -h
+Usage of ./main:
+  -h    Show help menu
+  -ip string
+        IP address to scan (default "127.0.0.1")
+  -p string
+        Range of ports to scan (e.g. 22-80) (default "1-65535")
+  -type string
+        Type of scan (tcp or udp) (default "tcp")
 ```
 
-### Example
+### Examples
+
+TCP
 ```ruby
-$ pgo -h github.com -r1 20 -r2 161
+$ pgo -ip 192.168.1.1 -p 22-80 -t tcp
+```
+
+UDP
+```ruby
+$ pgo -ip 192.168.1.1 -p 22-80 -t udp
 ```
